@@ -1,0 +1,66 @@
+/*
+  Design tokens. Fill from your chosen direction (references/directions.md).
+  Every value on the page should come from here. Defaults below are Warm Craft.
+*/
+:root {
+  /* Fonts: two families maximum */
+  --font-display: "Fraunces", Georgia, serif;
+  --font-text: "Source Sans 3", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* Fluid type scale, ratio about 1.333 (see typography.md) */
+  --step--1: clamp(0.83rem, 0.80rem + 0.15vw, 0.94rem);
+  --step-0:  clamp(1.00rem, 0.95rem + 0.25vw, 1.13rem);
+  --step-1:  clamp(1.25rem, 1.15rem + 0.45vw, 1.50rem);
+  --step-2:  clamp(1.56rem, 1.40rem + 0.80vw, 2.00rem);
+  --step-3:  clamp(1.95rem, 1.65rem + 1.40vw, 2.67rem);
+  --step-4:  clamp(2.44rem, 1.95rem + 2.40vw, 3.55rem);
+  --step-5:  clamp(3.05rem, 2.25rem + 4.00vw, 4.74rem);
+
+  /* Color: 60 / 30 / 10 (see color.md) */
+  --color-bg:           #fbf6ee;  /* 60: cream */
+  --color-surface:      #f3ebdf;
+  --color-ink:          #2e221a;  /* 30: cocoa */
+  --color-ink-2:        #5e5048;
+  --color-rule:         #e2d6c6;
+  --color-accent:       #a8461f;  /* 10: terracotta, AA on cream */
+  --color-accent-hover: #8c3a19;
+  --color-on-accent:    #fffaf3;
+
+  /* Space, 4px base */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --gutter:  clamp(1.25rem, 4vw, 4rem);
+  --section: clamp(4rem, 10vw, 9rem);
+
+  /* Shape: one radius site-wide */
+  --radius: 6px;
+  --shadow-float: 0 8px 24px rgb(46 34 26 / 0.12); /* floating elements only */
+
+  /* Motion (see motion.md) */
+  --dur-fast: 140ms;
+  --dur-base: 220ms;
+  --dur-slow: 320ms;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg:           #1c1714;
+    --color-surface:      #261f1b;
+    --color-ink:          #efe6da;
+    --color-ink-2:        #bfb2a4;
+    --color-rule:         #3a302a;
+    --color-accent:       #e07a52;
+    --color-accent-hover: #ea9372;
+    --color-on-accent:    #1c1714;
+  }
+}

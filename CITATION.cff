@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use or adapt this skill, please cite it as below."
+title: "No Slop Web: a Claude skill for websites that look designed, not generated"
+authors:
+  - family-names: Gargrish
+    given-names: Amber
+    website: "https://gargrish.com"
+repository-code: "https://github.com/ambergargrish-ca/no-slop-web"
+license: MIT
+version: 1.0.0
+date-released: 2026-11-24
+keywords: [claude-skill, web-design, ai-slop, ui, ux, accessibility, design-system]
