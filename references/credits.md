@@ -38,3 +38,4 @@ If something here should be credited differently, open an issue.
 
 - Dark mode elevation lessons (lighter means closer, calmer accents, elevation-matched borders, dimmer captions): from a short design video by Zander (no captions; transcribed offline).
 - Heavy visual library list (ThreeUI, Shader Lab, Glisse, GL Transitions, React Bits): from Charles Liu's "niche GitHub libraries to unslop your AI designs, part 2".
+- Speed seven (images, lazy loading, caching, N+1 queries, fonts, stale scripts, CDN): from a StefBuilds short.

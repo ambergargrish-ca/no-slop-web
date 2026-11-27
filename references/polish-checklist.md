@@ -82,7 +82,8 @@ Go through every line before calling a page done (92 checks). Mark each pass, fa
 
 ## I. Craft and performance
 
-55. Lighthouse performance 90+ on mobile; LCP under 2.5s; CLS under 0.1.
+55. Lighthouse performance 90+ on mobile; LCP under 2.5s; CLS under 0.1. Test on a throttled phone, not localhost (instant on a laptop can be 7 seconds on 4G).
+55a. Speed seven: images compressed and sized (WebP, srcset, no 5 MB photos); everything below the first screen lazy loaded; repeated database answers cached; lists fetched in one query (no N+1); at most three font files; tracking scripts from tools no longer used deleted; served from a CDN close to the user.
 56. No layout shift from fonts or images.
 57. No `href="#"`, no dead links, no lorem ipsum.
 58. Favicon, apple touch icon and manifest present.
