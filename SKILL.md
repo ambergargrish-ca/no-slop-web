@@ -39,6 +39,7 @@ Copy `templates/tokens.css` and fill it from the direction. Every color, size, s
 Read as needed:
 - `references/typography.md`: scale, pairing, measure, the details that read as premium.
 - `references/color.md`: the 60/30/10 rule, neutrals with temperature, one accent, dark mode.
+- `references/video.md`: the launch-video format for product videos, promos and reels (hook, real screens, brand card, end card).
 - `references/layout.md`: grid, rhythm, section anatomy, how to avoid the template look.
 
 ### 4. Build
