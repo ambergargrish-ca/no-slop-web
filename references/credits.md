@@ -20,6 +20,10 @@ No Slop Web was written by Amber Gargrish (gargrish.com) after building the Plat
 - **Utopia** (utopia.fyi): fluid type and space with `clamp()`.
 - **WCAG 2.2** by the W3C: accessibility criteria.
 
+## Talks and videos
+
+- **Charles Liu**, "10 niche design hacks (part 2)": the prompt for `interaction-details.md` (double submits, hit areas, theme flash, image space, Enter to submit, scroll margin, validate on blur, error states, pausing toasts, share images).
+
 ## Case study
 
 - **Platepoint**: a direct-ordering platform for restaurants, where these rules were tested on real screens (menus, ordering, checkout, confirmation).

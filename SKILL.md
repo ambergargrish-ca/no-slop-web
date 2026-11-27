@@ -62,7 +62,7 @@ It reports `file:line` findings by severity and a 0 to 100 score. Fix every **hi
 
 ### 6. Polish gate (human eye)
 
-Open the page in a real browser at 375px, 768px, 1280px and 1920px. Go through `references/polish-checklist.md` line by line. Take screenshots and look at them: squint at each viewport and confirm the eye lands on the one thing that matters first.
+Open the page in a real browser at 375px, 768px, 1280px and 1920px. Go through `references/polish-checklist.md` line by line. For forms, toasts, anchors and loading states, try them for real on a phone and on a throttled network (`references/interaction-details.md`). Take screenshots and look at them: squint at each viewport and confirm the eye lands on the one thing that matters first.
 
 ### 7. Ship
 
@@ -97,7 +97,8 @@ These apply to every build, whatever the direction:
 | `references/motion.md` | Durations, easing, what to animate, what never to animate |
 | `references/ux-laws.md` | Laws of UX mapped to concrete page decisions |
 | `references/accessibility.md` | WCAG 2.2 AA build rules and checks |
-| `references/polish-checklist.md` | The pre-ship gate, 60 checks |
+| `references/interaction-details.md` | Double submits, hit areas, theme flash, image space, Enter to submit, anchors, validation, states, toasts, share previews |
+| `references/polish-checklist.md` | The pre-ship gate, 68 checks |
 | `scripts/slop-scan.mjs` | Zero-dependency slop scanner with a score |
 | `templates/tokens.css` | Starter design tokens |
 | `templates/DESIGN.md` | Design system record for the project |

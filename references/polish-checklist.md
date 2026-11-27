@@ -1,6 +1,6 @@
 # Polish gate
 
-Go through every line before calling a page done. Mark each pass, fail, or not applicable. A page ships with zero fails in sections A and B.
+Go through every line before calling a page done (68 checks). Mark each pass, fail, or not applicable. A page ships with zero fails in sections A and B.
 
 ## A. Slop (must all pass)
 
@@ -88,3 +88,14 @@ Go through every line before calling a page done. Mark each pass, fail, or not a
 58. Favicon, apple touch icon and manifest present.
 59. 404 page designed in the same direction.
 60. The confirmation or thank-you moment is designed as carefully as the hero (peak-end).
+
+## J. Interaction details (see `interaction-details.md`)
+
+61. Submit buttons disable while the request runs and re-enable on failure; the server is idempotent anyway.
+62. Every tap target is at least 44 by 44 pixels, with space between neighbours.
+63. No theme flash on refresh: the theme is set in `<head>` before first paint.
+64. Enter submits every form (real `<form>`, `type="submit"` on the main button).
+65. Anchor targets clear the sticky header (`scroll-margin-top` or `scroll-padding-top`).
+66. Fields validate on blur and on submit, not on every keystroke.
+67. Loading, empty, error and offline states are designed; no endless spinner; typed input is kept.
+68. Toasts pause on hover and focus; errors stay until dismissed.
