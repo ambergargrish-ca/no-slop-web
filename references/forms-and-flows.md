@@ -31,6 +31,14 @@ Three identical cards with a badge on each, twelve repeated ticks and three grad
 4. **One primary button on the page.** The highlighted tier gets the filled button with a specific label ("Start with Team"); the others are outlined ("Choose Starter", "Talk to sales").
 5. **Write the saving in money.** "Save $98 a year" beats "-17%". Show the crossed-out monthly price next to the annual one, and do the arithmetic for them.
 
+## Command menus (⌘K) that feel instant
+
+1. **Last results first.** Show what's already known (recent picks, this screen's sections, cached results) the instant it opens, then refresh in place. Never an empty list, never a spinner in the middle.
+2. **A progress line, not a spinner.** A thin moving line under the search box while fresh results load; the list stays usable.
+3. **The bottom bar names the action.** It says what Enter will do for the highlighted row ("Open Bookings ↵", "Copy to clipboard ↵") in the same place every time.
+4. **A second palette for more actions.** ⌘K (or a menu key) on a row opens its other actions, each showing its shortcut, so people learn the keys.
+5. **Blur what's behind, don't black it out.** A light tint with a background blur keeps the context visible; a dark veil makes people lose their place.
+
 ## AI chat that doesn't look generated
 
 The default AI chat (purple header, robot avatar, "Hi there! How can I help you crush your goals today?", a wall of text) is instantly recognisable.
@@ -48,8 +56,9 @@ The default AI chat (purple header, robot avatar, "Hi there! How can I help you 
 - Errors appear on blur, are announced, and clear when fixed.
 - On a phone, search opens as a full-screen, step-by-step sheet with a live count on the button and recent searches before typing.
 - Pricing: one highlighted tier, at most one badge, differences only, one filled button, savings in money.
+- Command menu: results on open, progress line, action bar with its key, blurred backdrop.
 - AI chat: task-first welcome, steps folded with time, every claim cited, no layout jumps, plans rendered as cards.
 
 ## Credit
 
-Prompted by "The perfect text input", "Airbnb-style search, recreated", "Typography is a system" "De-AI your UI: pricing" videos, and Charles Liu's "Removing AI slop, day 5" (AI chat) by designmotionhq. The guidance here is written for this skill.
+Prompted by "The perfect text input", "Airbnb-style search, recreated", "Typography is a system" "De-AI your UI: pricing" videos, Charles Liu's "Removing AI slop, day 5" (AI chat), and designmotionhq's Raycast teardown (command menus) by designmotionhq. The guidance here is written for this skill.
