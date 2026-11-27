@@ -1,6 +1,6 @@
 # Polish gate
 
-Go through every line before calling a page done (68 checks). Mark each pass, fail, or not applicable. A page ships with zero fails in sections A and B.
+Go through every line before calling a page done (78 checks). Mark each pass, fail, or not applicable. A page ships with zero fails in sections A and B.
 
 ## A. Slop (must all pass)
 
@@ -99,3 +99,16 @@ Go through every line before calling a page done (68 checks). Mark each pass, fa
 66. Fields validate on blur and on submit, not on every keystroke.
 67. Loading, empty, error and offline states are designed; no endless spinner; typed input is kept.
 68. Toasts pause on hover and focus; errors stay until dismissed.
+
+## K. Mobile details (see `mobile-details.md`)
+
+69. Inputs, selects and textareas are 16px or larger on touch screens; zoom is never disabled.
+70. The grey tap flash is replaced by a designed `:active` state.
+71. Every field opens the right keyboard (`inputmode`, `type`, `autocomplete`).
+72. Hover-only styles sit inside `@media (hover: hover)`; nothing depends on hover.
+73. Code fields use `autocomplete="one-time-code"` in one field and accept pasted codes.
+74. Modals, drawers and horizontal rows contain their scroll (`overscroll-behavior`).
+75. Email fields use `type="email"`, no auto-capital, no spellcheck, trimmed.
+76. Tapped controls use `touch-action: manipulation` (no double-tap zoom).
+77. `enterkeyhint` matches what Enter does (search, next, go, done, send).
+78. Horizontal rows snap to items and visibly scroll.
