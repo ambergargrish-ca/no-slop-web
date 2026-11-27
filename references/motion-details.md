@@ -33,6 +33,14 @@ Change the shape, don't swap the picture. Use one SVG whose parts move.
 - **Send:** the arrow or plane flies out in the send direction (about 400ms) and springs back in from the other side, ready for the next message.
 - **Unlock:** the shackle springs up about 18px with a clear overshoot (about 30%) before settling open.
 
+## Native feel (what phones do that web pages forget)
+
+- **Respond on touch down.** The press state shows the instant a finger lands (0ms), not on release. On iOS Safari, `:active` only fires when the page has a touch listener; add a passive `touchstart` listener once.
+- **Springs, not timers.** Things that arrive use a spring (damping about 0.8, about 1.5% overshoot) instead of a fixed duration and a dead stop. In CSS, `linear()` with spring points approximates it; JS springs if you drag.
+- **Keep native momentum and rubber band.** Don't hijack scrolling or replace it with JS; don't set `overscroll-behavior: none` on the page (only on fixed screens like a kitchen display, or on inner panels with `contain`). The stretch at the edge tells people they've reached the end.
+- **Interruptible.** A tap during an animation turns it around from where it is. Use CSS transitions (which reverse mid-way) rather than keyframes for open/close states, and never block input while something animates.
+- **Continuous corners.** Squircle corners ramp their curve in instead of snapping from straight to round: `corner-shape: squircle` where supported (keep it off 999px pills). Nobody can name it, everybody sees it.
+
 ## Checks
 
 - Each motion is tied to an action or state change, and the reduced-motion path was tested.
@@ -41,4 +49,4 @@ Change the shape, don't swap the picture. Use one SVG whose parts move.
 
 ## Credit
 
-Prompted by "More smooth details, in slow-mo" and "Icons that feel alive" videos by @motion_ui_interface. The guidance and numbers here are written for this skill.
+Prompted by "More smooth details, in slow-mo", "Icons that feel alive" and "iPhone: 6 invisible details" videos by @motion_ui_interface. The guidance and numbers here are written for this skill.
