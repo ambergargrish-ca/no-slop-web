@@ -21,12 +21,23 @@ Five decisions sit behind a good mobile search (places, tables, appointments, pr
 4. **Keep the thumb low.** Primary actions and the map/list switch sit in the bottom third. One floating pill switches between map and list.
 5. **Fill the empty state.** Before typing: recent searches (one tap repeats the whole search, dates and party included), "Near me", and a few nearby picks. Zero keystrokes for a returning visitor.
 
+## Pricing tables
+
+Three identical cards with a badge on each, twelve repeated ticks and three gradient buttons is the generated pricing page.
+
+1. **One tier gets the highlight.** Lift it slightly (a step forward, a stronger border); the others stay quiet. It anchors the choice.
+2. **One badge, or none.** "Most popular" on one card only. A badge on every card is a badge on none.
+3. **List what changes, not what repeats.** The higher tiers start with "Everything in Starter, plus" and list only the differences, so the comparison reads in seconds.
+4. **One primary button on the page.** The highlighted tier gets the filled button with a specific label ("Start with Team"); the others are outlined ("Choose Starter", "Talk to sales").
+5. **Write the saving in money.** "Save $98 a year" beats "-17%". Show the crossed-out monthly price next to the annual one, and do the arithmetic for them.
+
 ## Checks
 
 - Every field has a visible label, a 3:1 border, a 2px focus ring and the right type and autocomplete.
 - Errors appear on blur, are announced, and clear when fixed.
 - On a phone, search opens as a full-screen, step-by-step sheet with a live count on the button and recent searches before typing.
+- Pricing: one highlighted tier, at most one badge, differences only, one filled button, savings in money.
 
 ## Credit
 
-Prompted by "The perfect text input", "Airbnb-style search, recreated" and "Typography is a system" videos by designmotionhq. The guidance here is written for this skill.
+Prompted by "The perfect text input", "Airbnb-style search, recreated", "Typography is a system" and "De-AI your UI: pricing" videos by designmotionhq. The guidance here is written for this skill.
