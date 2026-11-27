@@ -35,3 +35,6 @@ No Slop Web was written by Amber Gargrish (gargrish.com) after building the Plat
 - **Platepoint**: a direct-ordering platform for restaurants, where these rules were tested on real screens (menus, ordering, checkout, confirmation).
 
 If something here should be credited differently, open an issue.
+
+- Dark mode elevation lessons (lighter means closer, calmer accents, elevation-matched borders, dimmer captions): from a short design video by Zander (no captions; transcribed offline).
+- Heavy visual library list (ThreeUI, Shader Lab, Glisse, GL Transitions, React Bits): from Charles Liu's "niche GitHub libraries to unslop your AI designs, part 2".

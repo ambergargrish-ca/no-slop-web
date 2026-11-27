@@ -61,7 +61,12 @@ Never: gradient headline text, purple to blue hero backgrounds, rainbow borders,
 - Not inverted: build a separate neutral ramp. Background around `oklch(16% 0.01 hue)`, not `#000`.
 - Text is off-white (`oklch(93% 0.01 hue)`), not `#fff`.
 - Reduce accent saturation slightly so it does not vibrate.
-- Elevation in dark mode comes from lighter surfaces, not shadows.
+- Elevation in dark mode comes from lighter surfaces, not shadows. Page darkest, then card, input, menu and dialog, each a step lighter (closer to the viewer means lighter).
+- A card the same colour as the page reads flat; lift it a step instead of adding a border.
+- Borders: swap white or light borders for a grey one step above the surface (or white at a low alpha). A bright border on dark shouts louder than the content.
+- Hierarchy: dim captions and meta text further than in light mode; titles carry the contrast, captions sit back (still AA).
+- A bright brand accent on dark glows like a beacon: lower its chroma and lift its lightness, and drop any coloured glow.
+- Dark does not have to mean grey: a warm, plum or green tinted ramp works if the same elevation steps hold.
 - Respect `prefers-color-scheme`, and if there is a toggle, remember the choice.
 
 ## Checks

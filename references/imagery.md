@@ -39,3 +39,12 @@
 ## Open Graph
 
 Design the share image (1200 by 630) like a poster for the page: the headline, the brand, one image. It is the first impression for anyone who sees the link.
+
+## Heavy visual libraries (3D, shaders, glass, WebGL transitions)
+
+Libraries such as ThreeUI (cinematic 3D landing pages), Shader Lab (halftone, dither and other shader effects), Glisse (Liquid Glass for the web), GL Transitions (GPU transitions) and React Bits (copy-paste animated backgrounds) can lift a marketing hero out of the template look. Rules before reaching for one:
+- Marketing and storytelling pages only. Never on working screens (tills, kitchen displays, forms, dashboards) where speed and legibility win.
+- One per page, and it must carry the brand or the product story, not decorate.
+- Ship a static fallback (poster image) for `prefers-reduced-motion`, low-power devices and no WebGL, and keep text legible over it (contrast measured on the busiest frame).
+- Check the weight: lazy-load below the fold, keep the first screen fast (LCP under 2.5s on a mid phone).
+- Glass needs a real, varied backdrop to refract; over a flat colour it is just a blur.
