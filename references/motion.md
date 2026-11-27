@@ -32,15 +32,33 @@ Exit faster than enter (about 70% of the enter duration).
 ## Easing
 
 ```css
---ease-out:    cubic-bezier(0.22, 1, 0.36, 1);     /* entering, most UI */
---ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);     /* moving between positions */
---ease-in:     cubic-bezier(0.55, 0, 1, 0.45);     /* exiting */
+--ease-out:    cubic-bezier(0.22, 1, 0.36, 1);     /* entering and exiting, most UI */
+--ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);     /* moving between positions on screen */
 ```
+
+- Ease-out for things appearing and disappearing: it starts fast, so the same 300ms feels quicker. Avoid plain `ease-in` for UI; it feels delayed.
+- Ease-in-out for things already on screen that move from A to B (a slider, a step indicator), the way a car pulls away and stops.
+- Write your own curves; the CSS keywords are weak. Keep them as tokens.
 
 - Never `linear` for UI movement (fine for progress and spinners).
 - Springs only where the direction allows personality (Warm Craft, Bold Brutal), and keep overshoot small.
 
-## Technique
+## Practical rules
+
+- **Press feedback:** buttons scale to about 0.97 on `:active`, within 100ms. Not on disabled buttons.
+- **Never from scale 0.** Popovers, menus and dialogs start at 0.9 to 0.96 with opacity 0; scale 0 looks like it comes from nowhere.
+- **Origin-aware popovers.** Set `transform-origin` to the corner or edge nearest the trigger (top left for a menu under a left button), so it visibly comes from what was pressed. Modals stay centred.
+- **Don't animate what people trigger constantly.** Keyboard navigation through a list, command menu highlights, typing, the POS keypad, anything used dozens of times an hour: instant. After the first tooltip, the next appears with no delay or animation.
+- **Keep it fast:** most UI under 300ms. Slow animation makes the product feel slow.
+- **Hover the parent, move the child.** Put `:hover` on the stable wrapper and transform the inner element, so the moving element doesn't slip out from under the pointer and flicker.
+- **Blur between icons.** When one icon swaps for another (copy to check), cross-fade with a 2px blur on both so the eye sees one change, not two icons.
+- **Stagger with restraint.** A related group (a toolbar opening, three action buttons) can stagger about 30 to 70ms apart to lead the eye. Not page content on scroll.
+- **Swap in place.** When an element changes into another (button to spinner to tick), keep it in the same box so nothing around it moves.
+- **Move along arcs.** Things travelling a long way (an item flying into the cart) follow a curve, not a straight line.
+- **Lift while dragging.** A held item scales up slightly (about 1.03 to 1.05) and casts a larger shadow; it settles back on drop.
+- **Roll numbers, don't swap them.** A changing count or total slides the old digits out and the new ones in (with `tabular-nums`), so the change is noticed.
+- **Fix the shake.** If an element jumps by a pixel at the start or end of a transform, add `will-change: transform` to it during the animation (remove it after on long pages).
+
 
 - Animate `transform` and `opacity` only. Never animate `width`, `height`, `top` or `left` for movement.
 - Small distances: elements entering move 4 to 16px, not 50px.

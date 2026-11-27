@@ -121,6 +121,7 @@ Go through every line before calling a page done (92 checks). Mark each pass, fa
 82. Multi-step work shows its steps as they happen and folds them afterwards; the result reveals, not pastes.
 83. Icons that change state morph (play/pause, theme, search/close, send, download, unlock) instead of swapping.
 84. Every motion has a tested reduced-motion path.
+84a. Buttons press to about 0.97; nothing animates from scale 0; popovers grow from their trigger; frequent and keyboard-driven UI is instant; changing numbers roll.
 
 ## M. Forms, flows and type (see `forms-and-flows.md`, `typography.md`)
 
