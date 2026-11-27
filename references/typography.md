@@ -71,3 +71,15 @@ Rules:
 - Self-host with `woff2`, subset where possible, `font-display: swap`.
 - Preload only the display weight used above the fold.
 - Set a fallback with matched metrics (`size-adjust`, `ascent-override`) to avoid layout shift.
+
+## Audit an app's type
+
+Apps drift: every new screen adds a size "just for this". Count before you redesign.
+
+- **Sizes.** List every `font-size`. Pick one ratio (1.2 or 1.25 for apps, 1.333 for marketing) and keep 5 to 7 sizes, for example 13, 16, 20, 25, 32 at 1.25. Snap every odd value (12.5, 13.5, 15.5) to the nearest step. `slop-scan` flags more than 9.
+- **Inks.** Three text colours, not ten greys: primary (the thing you scan for, such as the amount), secondary (still readable, such as the invoice number), muted (present but quiet, such as the date). Inside one row, rank with colour; between blocks, rank with size.
+- **Weights.** Two do the work: 400 to read, 600 to scan (headings, numbers, labels). A third only for display. `slop-scan` flags more than 3.
+- **Leading against size.** Line height falls as size rises: about 1.5 for body, 1.3 for subheads, 1.1 for headings.
+- **Tracking at the extremes.** Large headings tighten (about -0.02em); small uppercase labels open up (about +0.06em); body text stays at 0.
+- **Measure.** Cap the text, not the box: 45 to 75 characters per line, even inside a 1400px container.
+- **Figures.** `font-variant-numeric: tabular-nums` on prices, totals, tables, timers and anything that updates, so columns line up and numbers don't wobble as they change.

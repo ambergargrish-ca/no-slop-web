@@ -257,7 +257,7 @@ const RULE_CAP = { high: 24, medium: 9, low: 3 }; // max deduction per rule
 const files = walk(ROOT);
 const findings = [];
 const counts = {};
-const project = { hasMotion: false, hasReducedMotion: false, hasFocusVisible: false, hasOutlineNone: false, fonts: new Set(), hexInComponents: new Set() };
+const project = { hasMotion: false, hasReducedMotion: false, hasFocusVisible: false, hasOutlineNone: false, fonts: new Set(), hexInComponents: new Set(), sizes: new Set(), weights: new Set() };
 
 for (const file of files) {
   const ext = extname(file).toLowerCase();
@@ -279,6 +279,10 @@ for (const file of files) {
   }
   for (const m of text.matchAll(/import\s*\{([^}]+)\}\s*from\s*["']next\/font\/google["']/g)) {
     m[1].split(",").map((s) => s.trim().replace(/_/g, " ")).filter(Boolean).forEach((f) => project.fonts.add(f));
+  }
+  if (STYLE.has(ext)) {
+    for (const m of text.matchAll(/font-size:\s*([0-9.]+)px/g)) project.sizes.add(Number(m[1]));
+    for (const m of text.matchAll(/font-weight:\s*([1-9]00|[1-9][0-9]0)\s*[;}]/g)) project.weights.add(m[1]);
   }
   if ([".jsx", ".tsx", ".vue", ".svelte", ".astro"].includes(ext)) {
     for (const m of text.matchAll(/#[0-9a-fA-F]{6}\b|#[0-9a-fA-F]{3}\b/g)) project.hexInComponents.add(m[0].toLowerCase());
@@ -340,6 +344,16 @@ if (fonts.length && fonts.every((f) => /^(Inter|Roboto|Open Sans|Poppins|Montser
   findings.push({ id: "default-font", sev: "medium", cat: "type", file: "(project)", line: 0,
     msg: `Only default-feeling fonts in use: ${fonts.join(", ")}`,
     fix: "Choose a deliberate pair for your direction (references/typography.md), unless it is the brand font", text: "" });
+}
+if (project.sizes.size > 9) {
+  findings.push({ id: "type-sizes", sev: "medium", cat: "type", file: "(project)", line: 0,
+    msg: `${project.sizes.size} different font sizes (${[...project.sizes].sort((a, b) => a - b).join(", ")}px)`,
+    fix: "Pick one ratio and 5 to 7 sizes, then snap everything to them (references/typography.md, Audit an app's type)", text: "" });
+}
+if (project.weights.size > 3) {
+  findings.push({ id: "type-weights", sev: "low", cat: "type", file: "(project)", line: 0,
+    msg: `${project.weights.size} different font weights (${[...project.weights].sort().join(", ")})`,
+    fix: "Two weights do most of the work (400 to read, 600 to scan), a third for display at most", text: "" });
 }
 if (project.hexInComponents.size > 15) {
   findings.push({ id: "no-tokens", sev: "low", cat: "craft", file: "(project)", line: 0,

@@ -1,6 +1,6 @@
 # Polish gate
 
-Go through every line before calling a page done (78 checks). Mark each pass, fail, or not applicable. A page ships with zero fails in sections A and B.
+Go through every line before calling a page done (92 checks). Mark each pass, fail, or not applicable. A page ships with zero fails in sections A and B.
 
 ## A. Slop (must all pass)
 
@@ -112,3 +112,23 @@ Go through every line before calling a page done (78 checks). Mark each pass, fa
 76. Tapped controls use `touch-action: manipulation` (no double-tap zoom).
 77. `enterkeyhint` matches what Enter does (search, next, go, done, send).
 78. Horizontal rows snap to items and visibly scroll.
+
+## L. Motion details (see `motion-details.md`)
+
+79. Sheets follow the finger and snap with a small overshoot; tooltips grow from their arrow.
+80. Typing indicators wave; toasts slide in and older ones step back.
+81. Success bursts only on the real peak (paid, ordered, booked), once, never on work screens.
+82. Multi-step work shows its steps as they happen and folds them afterwards; the result reveals, not pastes.
+83. Icons that change state morph (play/pause, theme, search/close, send, download, unlock) instead of swapping.
+84. Every motion has a tested reduced-motion path.
+
+## M. Forms, flows and type (see `forms-and-flows.md`, `typography.md`)
+
+85. Every field has a visible label outside it; placeholders only show examples.
+86. Field borders reach 3:1 contrast at rest; focus is a 2px accent outline with an offset.
+87. Errors appear on blur, use `aria-describedby` and `aria-invalid`, and clear when fixed.
+88. Mobile search opens full screen and asks one question at a time; done steps fold to one line.
+89. The primary button carries the live result count; recent searches show before typing.
+90. Five to seven font sizes on one ratio; three text inks; two weights (three for display).
+91. Leading falls as size rises; big headings tighten, small caps labels open; body measure 45 to 75 characters.
+92. Prices, totals, tables and live numbers use tabular figures.

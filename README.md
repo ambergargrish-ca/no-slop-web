@@ -15,7 +15,7 @@ It distils what I learned building the full UI and UX of **Platepoint**, a direc
 - **Eight design directions** (Editorial, Swiss, Quiet Luxury, Warm Craft, Technical Mono, Bold Brutal, Soft Modern, Monochrome Gallery), each a complete set of type, palette, radius, motion and a signature move.
 - **Playbooks** for typography, color, layout, copy, imagery, motion, Laws of UX and WCAG 2.2 AA accessibility.
 - **`slop-scan`**, a zero-dependency Node scanner that finds the tells in your code and gives you `file:line` findings and a 0 to 100 score. Works in CI.
-- **A 78-point polish gate** to go through before launch.
+- **A 92-point polish gate** to go through before launch.
 - **Templates** (`tokens.css` with a fluid type scale and dark mode, and a `DESIGN.md` design record) plus a sloppy page and its fixed version for calibration.
 
 ## Install
@@ -85,7 +85,9 @@ references/
   imagery.md  motion.md  ux-laws.md  accessibility.md
   interaction-details.md    10 small behaviours that make a page feel finished
   mobile-details.md         10 phone and tablet details (zoom, keyboards, hover, scroll)
-  polish-checklist.md       78-point pre-launch gate
+  motion-details.md         sheets, tooltips, toasts, bursts, steps, morphing icons
+  forms-and-flows.md        the perfect text input and mobile search flows
+  polish-checklist.md       92-point pre-launch gate
   credits.md
 scripts/slop-scan.mjs       the scanner
 templates/                  tokens.css, DESIGN.md

@@ -62,7 +62,7 @@ It reports `file:line` findings by severity and a 0 to 100 score. Fix every **hi
 
 ### 6. Polish gate (human eye)
 
-Open the page in a real browser at 375px, 768px, 1280px and 1920px. Go through `references/polish-checklist.md` line by line. For forms, toasts, anchors and loading states, try them for real on a phone and on a throttled network (`references/interaction-details.md`). On a real iPhone and Android phone, go through `references/mobile-details.md`. Take screenshots and look at them: squint at each viewport and confirm the eye lands on the one thing that matters first.
+Open the page in a real browser at 375px, 768px, 1280px and 1920px. Go through `references/polish-checklist.md` line by line. For forms, toasts, anchors and loading states, try them for real on a phone and on a throttled network (`references/interaction-details.md`). On a real iPhone and Android phone, go through `references/mobile-details.md`. Check every form against `references/forms-and-flows.md` and every state change against `references/motion-details.md`. Take screenshots and look at them: squint at each viewport and confirm the eye lands on the one thing that matters first.
 
 ### 7. Ship
 
@@ -99,7 +99,9 @@ These apply to every build, whatever the direction:
 | `references/accessibility.md` | WCAG 2.2 AA build rules and checks |
 | `references/interaction-details.md` | Double submits, hit areas, theme flash, image space, Enter to submit, anchors, validation, states, toasts, share previews |
 | `references/mobile-details.md` | 16px inputs, tap highlight, keyboards, hover media query, OTP autofill, overscroll, email fields, double-tap zoom, enterkeyhint, scroll snap |
-| `references/polish-checklist.md` | The pre-ship gate, 78 checks |
+| `references/motion-details.md` | Sheets, tooltips, typing dots, toast stacks, drops, success bursts, showing steps, morphing icons |
+| `references/forms-and-flows.md` | The perfect text input; one-question-at-a-time mobile search with a live count |
+| `references/polish-checklist.md` | The pre-ship gate, 92 checks |
 | `scripts/slop-scan.mjs` | Zero-dependency slop scanner with a score |
 | `templates/tokens.css` | Starter design tokens |
 | `templates/DESIGN.md` | Design system record for the project |
