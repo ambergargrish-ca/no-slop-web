@@ -26,6 +26,7 @@ No Slop Web was written by Amber Gargrish (gargrish.com) after building the Plat
 - **Charles Liu**, "10 niche mobile hacks": the prompt for `mobile-details.md` (16px inputs, tap highlight, numeric inputmode, hover media query, OTP autofill, overscroll contain, email input type, no double-tap zoom, enter key hint, scroll snap).
 
 - **Charles Liu**, "20 practical animation tips": prompts for the practical rules in `motion.md`.
+- **Charles Liu**, colour video (60% background, 30% secondary, 10% accent, built in three moves): prompt for the palette-building steps in `color.md`.
 - **@motion_ui_interface**, "More smooth details, in slow-mo" and "Icons that feel alive": prompts for `motion-details.md`.
 - **designmotionhq**, "The perfect text input", "Airbnb-style search, recreated" and "Typography is a system": prompts for `forms-and-flows.md` and the type audit in `typography.md`.
 

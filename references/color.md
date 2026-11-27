@@ -10,6 +10,14 @@ Classy palettes are mostly neutral. The accent is rare, which is why it works.
 
 If the accent covers large areas, it stops meaning "act here".
 
+Build it in three moves and look after each one:
+
+1. **Set the mood with the 60.** The background alone should already say something: cream paper for an indie venue, raw clay for a pottery studio, petrol blue for an evening event.
+2. **Add the 30 for character.** One strong secondary carries the type, imagery or large blocks: riso teal on cream, iron brown on clay, ivory on petrol. Two colours often look tasteful but dull.
+3. **Spend the 10 on one thing.** A single loud accent placed on the hero subject or the main action (fluorescent pink, turquoise glaze, saffron gold) is what makes people look. One element, not sprinkled everywhere.
+
+Tint photography and illustration into the palette (duotone in the 30 colour, accent on the subject) so images belong to the page instead of fighting it.
+
 ## Neutrals with temperature
 
 Pure grey looks cheap. Tint every neutral toward one hue.
