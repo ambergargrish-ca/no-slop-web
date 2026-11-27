@@ -100,7 +100,7 @@ These apply to every build, whatever the direction:
 | `references/interaction-details.md` | Double submits, hit areas, theme flash, image space, Enter to submit, anchors, validation, states, toasts, share previews |
 | `references/mobile-details.md` | 16px inputs, tap highlight, keyboards, hover media query, OTP autofill, overscroll, email fields, double-tap zoom, enterkeyhint, scroll snap |
 | `references/motion-details.md` | Sheets, tooltips, typing dots, toast stacks, drops, success bursts, showing steps, morphing icons |
-| `references/forms-and-flows.md` | The perfect text input; one-question-at-a-time mobile search with a live count; pricing tables |
+| `references/forms-and-flows.md` | The perfect text input; one-question-at-a-time mobile search with a live count; pricing tables; AI chat |
 | `references/polish-checklist.md` | The pre-ship gate, 92 checks |
 | `scripts/slop-scan.mjs` | Zero-dependency slop scanner with a score |
 | `templates/tokens.css` | Starter design tokens |

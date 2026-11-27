@@ -31,13 +31,25 @@ Three identical cards with a badge on each, twelve repeated ticks and three grad
 4. **One primary button on the page.** The highlighted tier gets the filled button with a specific label ("Start with Team"); the others are outlined ("Choose Starter", "Talk to sales").
 5. **Write the saving in money.** "Save $98 a year" beats "-17%". Show the crossed-out monthly price next to the annual one, and do the arithmetic for them.
 
+## AI chat that doesn't look generated
+
+The default AI chat (purple header, robot avatar, "Hi there! How can I help you crush your goals today?", a wall of text) is instantly recognisable.
+
+1. **Start with the task, not the bot.** A plain question as the headline ("What are we working on?") and three or four real starting prompts as chips. No "AI Assistant · Online" bar, no emoji greeting, the brand's own palette.
+2. **Show each step, then fold it.** Steps appear as they happen in plain words, then collapse into one line with the time ("Thought for 4s", "Worked through 3 steps in 4s"). See motion-details, Steps show the work.
+3. **Cite every claim.** Numbers and facts carry a small numbered marker or chip that names where they came from (their own sales, their calendar, a document). If the data doesn't say it, the assistant says so.
+4. **Lay out before it streams.** Reserve the space for the answer and any card or chart, so the page never jumps as text arrives.
+5. **Make the plan a thing, not a paragraph.** When the answer is a plan, schedule, comparison or trend, render it as a card, list or small chart with its own actions (add to calendar, schedule it), and keep the prose to a sentence or two.
+6. **Optimistic and pre-emptive.** The person's message appears instantly; edits to a plan show at once and roll back if they fail; the assistant offers the obvious next step as a button.
+
 ## Checks
 
 - Every field has a visible label, a 3:1 border, a 2px focus ring and the right type and autocomplete.
 - Errors appear on blur, are announced, and clear when fixed.
 - On a phone, search opens as a full-screen, step-by-step sheet with a live count on the button and recent searches before typing.
 - Pricing: one highlighted tier, at most one badge, differences only, one filled button, savings in money.
+- AI chat: task-first welcome, steps folded with time, every claim cited, no layout jumps, plans rendered as cards.
 
 ## Credit
 
-Prompted by "The perfect text input", "Airbnb-style search, recreated", "Typography is a system" and "De-AI your UI: pricing" videos by designmotionhq. The guidance here is written for this skill.
+Prompted by "The perfect text input", "Airbnb-style search, recreated", "Typography is a system" "De-AI your UI: pricing" videos, and Charles Liu's "Removing AI slop, day 5" (AI chat) by designmotionhq. The guidance here is written for this skill.

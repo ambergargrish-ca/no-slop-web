@@ -133,4 +133,5 @@ Go through every line before calling a page done (92 checks). Mark each pass, fa
 90. Five to seven font sizes on one ratio; three text inks; two weights (three for display).
 91. Leading falls as size rises; big headings tighten, small caps labels open; body measure 45 to 75 characters.
 92. Prices, totals, tables and live numbers use tabular figures.
+92b. AI chat: task-first welcome without a bot header, steps shown then folded with time, every figure cited to its source, answer space reserved, plans rendered as cards.
 92a. Pricing: one highlighted tier, at most one badge, "Everything in X, plus" lists, one filled button, savings written in money.
